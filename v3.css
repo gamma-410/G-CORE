@@ -1,0 +1,95 @@
+:root {
+  --bsColor: #0eccc5;
+  --sbColor: #82ccc9;
+  --acColor: #5db79b;
+  --shColor: #6da8aa;
+  --textColor: #282828;
+  --whColor: #fcfcfc;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body, html {
+  padding: 10px;
+  margin: 10px;
+  color: var(--textColor);
+}
+
+p {
+  font-size: 1.1em;
+}
+h6 {
+  font-size: 0.8em;
+}
+h5 {
+  font-size: 0.95em;
+}
+h4 {
+  font-size: 1.11em;
+}
+h3 {
+  font-size: 1.3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 2em;
+}
+
+button, input[type="button"] {
+  width: auto;
+  padding: 10.5px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 1em;
+  font-size: 0.8em;
+  color: var(--whColor);
+  background: var(--sbColor);
+  transition: 0.2s;
+}
+button:hover, input[type="button"]:hover {
+  box-shadow: #dddddd 0px 1px 1px 1px;
+  background: var(--shColor)
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 10.5px;
+  border: none;
+  border: solid 0.8px #cccccc;
+  border-radius: 1em;
+  -webkit-appearance: none;
+  transition: 0.2s;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  box-shadow: #dddddd 0px 1px 1px 1px;
+  border: solid 0.8px #cccccc;
+  transition: 0.2s; 
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 10.5px;
+  border: none;
+  border-radius: 1em;
+  border: solid 0.8px #cccccc;
+  resize: none;
+  transition: 0.2s;
+  -webkit-appearance: none;
+}
+textarea:focus {
+  box-shadow: #dddddd 0px 1px 1px 1px;
+  border: solid 0.8px #cccccc;
+  transition: 0.2s;
+}
