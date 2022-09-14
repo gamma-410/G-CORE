@@ -1,13 +1,56 @@
+/* G-CORE | gamma410 ~ copyright (c) 2022 */
+
 :root {
   --bsColor: #0eccc5;
-  --sbColor: #82ccc9;
+  --sbColor: #badbd6;
   --acColor: #5db79b;
-  --shColor: #6da8aa;
+  --bsTextColor: #084349;
+  --shColor: #85c6c2;
   --textColor: #282828;
   --whColor: #fcfcfc;
 }
 
+
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Black.otf');
+  font-weight: black;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Thin.otf');
+  font-weight: thin;
+  font-style: normal;
+}
+
+
 * {
+  font-family: "notoSansJP";
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -17,11 +60,60 @@
   outline: none;
 }
 
+
 body, html {
-  padding: 10px;
-  margin: 10px;
+  margin: 0px;
+  padding: 0px;
   color: var(--textColor);
 }
+
+
+header {
+  margin: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  background: var(--sbColor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1, header p {
+  color: var(--bsTextColor);
+}
+header h1 {
+  font-size: 1.3em;
+}
+header p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+main {
+  background: #dcedec;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 21px;
+}
+
+
+div p, div h1 {
+  color: var(--bsTextColor);
+  font-weight: bold;
+}
+
+
+hr {
+  color: var(--bsTextColor);
+  border: none;
+  border: solid 1px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
 
 p {
   font-size: 1.1em;
@@ -45,6 +137,7 @@ h1 {
   font-size: 2em;
 }
 
+
 button, input[type="button"] {
   width: auto;
   padding: 10.5px;
@@ -52,7 +145,7 @@ button, input[type="button"] {
   border: none;
   border-radius: 1em;
   font-size: 0.8em;
-  color: var(--whColor);
+  color: var(--bsTextColor);
   background: var(--sbColor);
   transition: 0.2s;
 }
@@ -61,35 +154,52 @@ button:hover, input[type="button"]:hover {
   background: var(--shColor)
 }
 
+
 input[type="text"], input[type="email"], input[type="password"] {
   width: 100%;
+  font-size: 0.9em;
   margin-bottom: 1em;
   padding: 10.5px;
   border: none;
-  border: solid 0.8px #cccccc;
+  border: solid 1.5px #cccccc;
   border-radius: 1em;
   -webkit-appearance: none;
   transition: 0.2s;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
-  box-shadow: #dddddd 0px 1px 1px 1px;
-  border: solid 0.8px #cccccc;
-  transition: 0.2s; 
+  border: solid 1.5px var(--shColor);
+  border-radius: 0.5em;
+  transition: 0.2s;
+  font-size: 1em; 
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  border: solid 1.5px var(--shColor);
+  transition: 0.2s;
 }
 
 textarea {
+  font-size: 0.9em;
   width: 100%;
   margin-bottom: 1em;
   padding: 10.5px;
   border: none;
   border-radius: 1em;
-  border: solid 0.8px #cccccc;
+  border: solid 1.5px #cccccc;
   resize: none;
   transition: 0.2s;
   -webkit-appearance: none;
 }
 textarea:focus {
-  box-shadow: #dddddd 0px 1px 1px 1px;
-  border: solid 0.8px #cccccc;
+  border: solid 1.5px var(--shColor);
+  border-radius: 0.5em;
+  transition: 0.2s;
+  font-size: 1em;
+}
+textarea:hover {
+  border: solid 1.5px var(--shColor);
   transition: 0.2s;
 }
+
+
+
+
