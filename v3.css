@@ -1,11 +1,15 @@
 /* G-CORE | gamma410 ~ copyright (c) 2022 */
 
 :root {
-  --bsColor: #0eccc5;
-  --sbColor: #badbd6;
-  --acColor: #5db79b;
-  --bsTextColor: #084349;
-  --shColor: #85c6c2;
+  --bsTextColor: #0d4e58;
+  --bsColor: #10a2b8;
+  --acColor: #5daeb7;
+  --shColor: #85bac6;
+  --sbColor: #badbd9;
+  --bgColor: #f0fbf9;
+  --sc: #b0d9ac;
+  --er: #e3aba2;
+  --ms: #c0cae3;
   --textColor: #282828;
   --whColor: #fcfcfc;
 }
@@ -14,7 +18,7 @@
 @font-face {
   font-family: "notoSansJP";
   src: url('fonts/NotoSansJP-Black.otf');
-  font-weight: black;
+  font-weight: bolder;
   font-style: normal;
 }
 @font-face {
@@ -26,19 +30,13 @@
 @font-face {
   font-family: "notoSansJP";
   src: url('fonts/NotoSansJP-Medium.otf');
-  font-weight: medium;
-  font-style: normal;
-}
-@font-face {
-  font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Thin.otf');
-  font-weight: thin;
+  src: url('fonts/NotoSansJP-Regular.otf');
+  font-weight: lighter;
   font-style: normal;
 }
 
@@ -55,7 +53,15 @@
 }
 
 
+/* iOS */
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
 body, html {
+  background: var(--bgColor);
   margin: 0px;
   padding: 0px;
   color: var(--textColor);
@@ -83,7 +89,6 @@ header h1 {
 }
 header p {
   font-size: 1em;
-  font-weight: bold;
 }
 
 
@@ -103,7 +108,6 @@ div {
 }
 div p, div h1 {
   color: var(--bsTextColor);
-  font-weight: bold;
 }
 
 
@@ -150,18 +154,21 @@ h1 {
 
 button, input[type="button"] {
   width: auto;
-  padding: 10.5px;
+  padding: 20.5px;
   margin-bottom: 1em;
   border: none;
   border-radius: 1em;
   font-size: 0.8em;
+  font-weight: medium;
   color: var(--bsTextColor);
   background: var(--sbColor);
   transition: 0.2s;
+  box-shadow: #d3d3d3 0px 0.5px 0.5px 0.5px;
 }
 button:hover, input[type="button"]:hover {
-  box-shadow: #dddddd 0px 1px 1px 1px;
-  background: var(--shColor)
+  box-shadow: #bdbdbd 0px 0.7px 0.7px 0.7px;
+  background: var(--shColor);
+  transition: 0.2s;
 }
 
 
@@ -246,17 +253,17 @@ g-card-s p {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--sbColor);
+  background-color: var(--sc);
 }
 g-card-e p {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--sbColor);
+  background-color: var(--er);
 }
 g-card-c p {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--sbColor); 
+  background-color: var(--ms); 
 }

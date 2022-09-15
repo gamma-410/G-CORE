@@ -1,62 +1,95 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>G-CORE DEMO - lip.v3</title>
+  <style>
+    pre {
+      overflow: scroll;
+      width: 100%;
+    }
+  </style>
   <link href="v3.css" rel="stylesheet">
 </head>
+
 <body>
+
   <header>
     <h1>G-CORE</h1>
     <p>ver 3.0</p>
   </header>
+
   <main>
+    <div>
+      <p>microDesignSystem</p>
+      <h1>G-CORE</h1>
+      <p>呼び出すだけで最小限の UI / UX を。</p>
+    </div>
+
+    <h3>Hello, World!</h3>
+    <p>G-CORE へようこそ。</p>
+    <p>ここには、より「簡単」に「直感的に」操作できるアクセシビリティ機能を含んでいます。</p>
+    <p>さぁ、あなたのプロダクトでも呼び出してみましょう！</p>
+
+    <h3>import G-CORE</h3>
+    <p>以下のソースをHTMLのheadタグに追加してください。</p>
+
+    <pre>
+      <code class="prettyprint lang-html">
+        &lt;link href="https://gamma-410.github.io/G-CORE/v3.css" rel="stylesheet"&gt;
+      </code>
+    </pre>
+
+    <p>たったこれだけで G-CORE の準備は完了しました。</p>
+    <p>早速、コーディングを始めましょう！</p>
 
     <div>
       <p>G-CORE</p>
       <h1>headLine</h1>
-      <p>見出しは最も重要な役割を持っています。<br>ページにどんな情報が含まれているのかをユーザーに示す重要な表記です。</p>
+      <p>headLine は、どんな情報が含まれているのかをユーザーに示す重要な表記です。</p>
     </div>
 
     <ul>
-      <li>h1</li>
-        <h1>Hello, G-CORE.</h1>
-      <li>h2</li>
-        <h2>Hello, G-CORE.</h2>
-      <li>h3</li>
-        <h3>Hello, G-CORE.</h3>
-      <li>h4</li>
-        <h4>Hello, G-CORE.</h4>
-      <li>h5</li>
-        <h5>Hello, G-CORE.</h5>
-      <li>h6</li>
-        <h6>Hello, G-CORE.</h6>
+      <li>h1タグ</li>
+      <h1>Hello, G-CORE.</h1>
+      <li>h2タグ</li>
+      <h2>Hello, G-CORE.</h2>
+      <li>h3タグ</li>
+      <h3>Hello, G-CORE.</h3>
+      <li>h4タグ</li>
+      <h4>Hello, G-CORE.</h4>
+      <li>h5タグ</li>
+      <h5>Hello, G-CORE.</h5>
+      <li>h6タグ</li>
+      <h6>Hello, G-CORE.</h6>
     </ul>
 
     <div>
       <p>G-CORE</p>
-      <h1>button & forms</h1>
-      <p>ボタンやフォームはユーザーがタップするひとつのコンポーネントです。<br>タップイベントを視覚的に伝えましょう。</p>
+      <h1>Actions</h1>
+      <p>Action Component は、人々が目的を達成するのに役立ちます。</p>
     </div>
-    
+
     <ul>
       <li>buttons</li>
+      <p>button は、アクションの実行をするとき非常に役立ちます。</p>
       <tr>
         <td>
           <button>button</button>
         </td>
         <td>
-          <input type="button" value="inputButton">
+          <input type="button" value="submit">
         </td>
       </tr>
       <br>
-      
-      <li>form (input)</li>
+
+      <li>form (input / textarea)</li>
+      <p>ユーザーは、テキストをUIに入力できます。</p>
       <input type="text" placeholder="Text field">
       <br>
-      
-      <li>form (textarea)</li>
+
       <textarea placeholder="Text field"></textarea>
       <br>
 
@@ -64,7 +97,7 @@
 
     <div>
       <p>G-CORE</p>
-      <h1>messageCard</h1>
+      <h1>message</h1>
       <p>ユーザーに情報を伝えるためのコンポーネントです。<br>どのような状態かを瞬時に理解できるようにしましょう。</p>
     </div>
 
@@ -72,14 +105,18 @@
       <p>処理が完了しました！</p>
     </g-card-s>
     <br>
+
     <g-card-e>
       <p>処理に失敗しました...</p>
     </g-card-e>
     <br>
+    
     <g-card-c>
       <p>メンテナンス中です...!</p>
     </g-card-c>
 
-  <a href="https://github.com/gamma-410/G-CORE">https://github.com/gamma-410/G-CORE</a>
+    <a href="https://github.com/gamma-410/G-CORE">https://github.com/gamma-410/G-CORE</a>
   </main>
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
