@@ -38,7 +38,7 @@
 
     <pre>
       <code class="prettyprint lang-html">
-        &lt;link href="https://gamma-410.github.io/G-CORE/v3.css" rel="stylesheet"&gt;
+      &lt;link href="https://gamma-410.github.io/G-CORE/v3.css" rel="stylesheet"&gt;
       </code>
     </pre>
 
@@ -48,23 +48,32 @@
     <div>
       <p>G-CORE</p>
       <h1>headLine</h1>
-      <p>headLine は、どんな情報が含まれているのかをユーザーに示す重要な表記です。</p>
+      <p>headLine は、そこにどのような情報が含まれているのかをユーザーに示す大切な表記です。</p>
     </div>
 
+    <h3>source</h3>
+    <p>divに以下のように書くことによって実装できます。</p>
+    <pre>
+      <code class="prettyprint lang-html">
+      &lt;div&gt;
+        &lt;p&gt;message&lt;/p&gt;
+        &lt;h1&gt;headLineTitle&lt;/h1&gt;
+        &lt;p&gt;detailText&lt;/p&gt;
+      &lt;/div&gt;
+      </code>
+    </pre>
+
+    <h3>terms</h3>
+    <p>message と headLineTitle と detailText ではユーザーに抽象的情報を示すことができます。</p>
     <ul>
-      <li>h1タグ</li>
-      <h1>Hello, G-CORE.</h1>
-      <li>h2タグ</li>
-      <h2>Hello, G-CORE.</h2>
-      <li>h3タグ</li>
-      <h3>Hello, G-CORE.</h3>
-      <li>h4タグ</li>
-      <h4>Hello, G-CORE.</h4>
-      <li>h5タグ</li>
-      <h5>Hello, G-CORE.</h5>
-      <li>h6タグ</li>
-      <h6>Hello, G-CORE.</h6>
+      <li>message</li>
+        <p>message は短く、簡単に書くことが大切です。</p>
+      <li>headLineTitle</li>
+        <p>headLineTitle は具体的でもあり、短く書くと良いでしょう。</p>
+      <li>detailText</li>
+        <p>detailText では上の２つで説明できなかった情報を書きます。<br>１から２行程度が良いでしょう。</p>
     </ul>
+
 
     <div>
       <p>G-CORE</p>
@@ -80,7 +89,10 @@
           <button>button</button>
         </td>
         <td>
-          <input type="button" value="submit">
+          <input type="button" value="type:button">
+        </td>
+        <td>
+          <input type="submit" value="type:submit">
         </td>
       </tr>
       <br>
@@ -90,7 +102,7 @@
       <input type="text" placeholder="Text field">
       <br>
 
-      <textarea placeholder="Text field"></textarea>
+      <textarea placeholder="Text field" rows="3"></textarea>
       <br>
 
     </ul>
@@ -111,9 +123,9 @@
     </g-card-e>
     <br>
     
-    <g-card-c>
+    <g-card-m>
       <p>メンテナンス中です...!</p>
-    </g-card-c>
+    </g-card-m>
 
     <a href="https://github.com/gamma-410/G-CORE">https://github.com/gamma-410/G-CORE</a>
   </main>

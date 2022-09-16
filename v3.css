@@ -54,11 +54,10 @@
 
 
 /* iOS */
-input[type="submit"] {
+input[type="button"], input[type="submit"] {
   appearance: none;
   -webkit-appearance: none;
 }
-
 
 body, html {
   background: var(--bgColor);
@@ -152,7 +151,7 @@ h1 {
 }
 
 
-button, input[type="button"] {
+button, input[type="button"], input[type="submit"] {
   width: auto;
   padding: 20.5px;
   margin-bottom: 1em;
@@ -165,7 +164,7 @@ button, input[type="button"] {
   transition: 0.2s;
   box-shadow: #d3d3d3 0px 0.5px 0.5px 0.5px;
 }
-button:hover, input[type="button"]:hover {
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
   box-shadow: #bdbdbd 0px 0.7px 0.7px 0.7px;
   background: var(--shColor);
   transition: 0.2s;
@@ -261,7 +260,7 @@ g-card-e p {
   border-radius: 10px;
   background-color: var(--er);
 }
-g-card-c p {
+g-card-m p {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
