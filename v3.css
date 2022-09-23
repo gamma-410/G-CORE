@@ -1,268 +1,271 @@
 /* G-CORE | gamma410 ~ copyright (c) 2022 */
 
 :root {
-  --bsTextColor: #0d4e58;
-  --bsColor: #10a2b8;
-  --acColor: #5daeb7;
-  --shColor: #85bac6;
-  --sbColor: #badbd9;
-  --bgColor: #f0fbf9;
-  --sc: #b0d9ac;
-  --er: #e3aba2;
-  --ms: #c0cae3;
-  --textColor: #282828;
-  --whColor: #fcfcfc;
-}
-
-
-@font-face {
-  font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Black.otf');
-  font-weight: bolder;
-  font-style: normal;
-}
-@font-face {
-  font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Bold.otf');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Medium.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "notoSansJP";
-  src: url('fonts/NotoSansJP-Regular.otf');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-
-* {
-  font-family: "notoSansJP";
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-
-
-/* iOS */
-input[type="button"], input[type="submit"] {
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-body, html {
-  background: var(--bgColor);
-  margin: 0px;
-  padding: 0px;
-  color: var(--textColor);
-}
-
-
-header {
-  position: sticky;
-  top: 0px;
-  margin: 0px;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 100%;
-  background: var(--sbColor);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-header h1, header p {
-  color: var(--bsTextColor);
-}
-header h1 {
-  font-size: 1.3em;
-}
-header p {
-  font-size: 1em;
-}
-
-
-main {
-  margin: 15px;
-  padding: 5px;
-}
-
-
-div {
-  margin: 0px;
-  padding: 50px;
-  border-radius: 40px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background: #dcedec;
-}
-div p, div h1 {
-  color: var(--bsTextColor);
-}
-
-
-hr {
-  color: var(--bsTextColor);
-  border: none;
-  border: solid 1px;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 10px;
-}
-
-
-li {
-  font-weight: medium;
-}
-li::marker {
-  color: var(--bsTextColor);
-}
-
-
-p {
-  font-size: 1.1em;
-}
-h6 {
-  font-size: 0.8em;
-}
-h5 {
-  font-size: 0.95em;
-}
-h4 {
-  font-size: 1.11em;
-}
-h3 {
-  font-size: 1.3em;
-}
-h2 {
-  font-size: 1.5em;
-}
-h1 {
-  font-size: 2em;
-}
-
-
-button, input[type="button"], input[type="submit"] {
-  width: auto;
-  padding: 20.5px;
-  margin-bottom: 1em;
-  border: none;
-  border-radius: 1em;
-  font-size: 0.8em;
-  font-weight: medium;
-  color: var(--bsTextColor);
-  background: var(--sbColor);
-  transition: 0.2s;
-  box-shadow: #d3d3d3 0px 0.5px 0.5px 0.5px;
-}
-button:hover, input[type="button"]:hover, input[type="submit"]:hover {
-  box-shadow: #bdbdbd 0px 0.7px 0.7px 0.7px;
-  background: var(--shColor);
-  transition: 0.2s;
-}
-
-
-input[type="text"], input[type="email"], input[type="password"] {
-  width: 100%;
-  font-size: 0.9em;
-  margin-bottom: 1em;
-  padding: 10.5px;
-  border: none;
-  border: solid 1.5px #cccccc;
-  border-radius: 1em;
-  -webkit-appearance: none;
-  transition: 0.2s;
-}
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
-  border: solid 1.5px var(--shColor);
-  border-radius: 0.5em;
-  transition: 0.2s;
-  font-size: 1em; 
-}
-input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
-  border: solid 1.5px var(--shColor);
-  transition: 0.2s;
-}
-
-textarea {
-  font-size: 0.9em;
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 10.5px;
-  border: none;
-  border-radius: 1em;
-  border: solid 1.5px #cccccc;
-  resize: none;
-  transition: 0.2s;
-  -webkit-appearance: none;
-}
-textarea:focus {
-  border: solid 1.5px var(--shColor);
-  border-radius: 0.5em;
-  transition: 0.2s;
-  font-size: 1em;
-}
-textarea:hover {
-  border: solid 1.5px var(--shColor);
-  transition: 0.2s;
-}
-
-
-a {
-  color: var(--bsColor)
-}
-
-
-/* container system */
-
-main {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 768px) {
-    main {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    main {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    main {
-        width: 1170px;
-    }
-}
-
-
-g-card-s p {
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--sc);
-}
-g-card-e p {
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--er);
-}
-g-card-m p {
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--ms); 
-}
+    --bsTextColor: #58440d;
+    --bsColor: #b87510;
+    --acColor: #b7965d;
+    --shColor: #c6a485;
+    --sh2: #cccccc;
+    --sbColor: #dbcfba;
+    --bgColor: rgb(251, 246, 240);
+    --divColor: #ede9dc;
+    --sc: #b0d9ac;
+    --er: #e3aba2;
+    --ms: #c0cae3;
+    --textColor: #282828;
+    --whColor: #fcfcfc;
+  }
+  
+  
+  @font-face {
+    font-family: "notoSansJP";
+    src: url('fonts/NotoSansJP-Black.otf');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "notoSansJP";
+    src: url('fonts/NotoSansJP-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "notoSansJP";
+    src: url('fonts/NotoSansJP-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "notoSansJP";
+    src: url('fonts/NotoSansJP-Regular.otf');
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+  
+  * {
+    font-family: "notoSansJP";
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  
+  /* iOS */
+  input[type="button"], input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  body, html {
+    background: var(--bgColor);
+    margin: 0px;
+    padding: 0px;
+    color: var(--textColor);
+  }
+  
+  
+  header {
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    background: var(--sbColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1, header p {
+    color: var(--bsTextColor);
+  }
+  header h1 {
+    font-size: 1.3em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  
+  
+  main {
+    margin: 15px;
+    padding: 5px;
+  }
+  
+  
+  div {
+    margin: 0px;
+    padding: 50px;
+    border-radius: 40px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background: var(--divColor);
+  }
+  div p, div h1 {
+    color: var(--bsTextColor);
+  }
+  
+  
+  hr {
+    color: var(--bsTextColor);
+    border: none;
+    border: solid 1px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  
+  
+  li {
+    font-weight: medium;
+  }
+  li::marker {
+    color: var(--bsTextColor);
+  }
+  
+  
+  p {
+    font-size: 1.1em;
+  }
+  h6 {
+    font-size: 0.8em;
+  }
+  h5 {
+    font-size: 0.95em;
+  }
+  h4 {
+    font-size: 1.11em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  
+  
+  button, input[type="button"], input[type="submit"] {
+    width: auto;
+    padding: 20.5px;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 1em;
+    font-size: 0.8em;
+    font-weight: medium;
+    color: var(--bsTextColor);
+    background: var(--sbColor);
+    transition: 0.2s;
+    box-shadow: var(--sh2) 0px 0.5px 0.5px 0.5px;
+  }
+  button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    box-shadow: var(--sh2) 0px 0.7px 0.7px 0.7px;
+    background: var(--shColor);
+    transition: 0.2s;
+  }
+  
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    padding: 10.5px;
+    border: none;
+    border: solid 1.5px var(--sh2);
+    border-radius: 1em;
+    -webkit-appearance: none;
+    transition: 0.2s;
+  }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: solid 1.5px var(--shColor);
+    border-radius: 0.5em;
+    transition: 0.2s;
+    font-size: 1em; 
+  }
+  input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    border: solid 1.5px var(--shColor);
+    transition: 0.2s;
+  }
+  
+  textarea {
+    font-size: 0.9em;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 10.5px;
+    border: none;
+    border-radius: 1em;
+    border: solid 1.5px var(--sh2);
+    resize: none;
+    transition: 0.2s;
+    -webkit-appearance: none;
+  }
+  textarea:focus {
+    border: solid 1.5px var(--shColor);
+    border-radius: 0.5em;
+    transition: 0.2s;
+    font-size: 1em;
+  }
+  textarea:hover {
+    border: solid 1.5px var(--shColor);
+    transition: 0.2s;
+  }
+  
+  
+  a {
+    color: var(--bsColor)
+  }
+  
+  
+  /* container system */
+  
+  main {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  @media (min-width: 768px) {
+      main {
+          width: 750px;
+      }
+  }
+  @media (min-width: 992px) {
+      main {
+          width: 970px;
+      }
+  }
+  @media (min-width: 1200px) {
+      main {
+          width: 1170px;
+      }
+  }
+  
+  
+  g-card-s p {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--sc);
+  }
+  g-card-e p {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--er);
+  }
+  g-card-m p {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--ms); 
+  }
+  
