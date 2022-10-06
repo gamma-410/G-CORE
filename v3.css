@@ -54,7 +54,7 @@
     outline: none;
   }
   
-  h1 span, p span {
+  body h1 span, body p span, textBox p span {
     display: inline-block;
   }
 
@@ -231,7 +231,7 @@
   
   
   a {
-    color: var(--bsColor)
+    color: var(--bsColor);
   }
   
   
@@ -280,3 +280,18 @@
     background-color: var(--ms); 
   }
   
+  textBox {
+    width: 100%;
+    padding: 1px;
+  }
+
+  textBox * {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  textBox a, textBox b, span {
+    padding: 0em;
+    margin: 0em;
+  }
+
