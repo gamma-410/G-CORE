@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>G-CORE DEMO - lip.v3</title>
+  <title>G-CORE 3</title>
   <style>
     pre {
       overflow: scroll;
       width: 100%;
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      border: solid rgb(185, 185, 185) 1px;
     }
   </style>
   <link href="v3.css" rel="stylesheet">
@@ -17,33 +20,35 @@
 <body>
 
   <header>
-    <h1>G-CORE</h1>
+    <h1><a href="index.html"><img src="logo.svg" width="40px"></a></h1>
     <p>ver 3.0</p>
   </header>
 
   <main>
     <div>
-      <p>microDesignSystem</p>
+      <p>minimumDesignSystem</p>
       <h1>G-CORE</h1>
-      <p>呼び出すだけで最小限の UI / UX を。</p>
+      <p>呼び出すだけで最小限の UI ・ UX を。</p>
     </div>
 
-    <h3>Hello, World!</h3>
-    <p>G-CORE へようこそ。</p>
-    <p>ここには、より「簡単」に「直感的に」操作できるアクセシビリティ機能を含んでいます。</p>
-    <p>さぁ、あなたのプロダクトでも呼び出してみましょう！</p>
+    <textbox>
+      <h3>Hello, World!</h3>
+      <p>G-CORE へようこそ。</p>
+      <p>ここには、より「簡単」に「直感的に」操作できるアクセシビリティ機能を含んでいます。</p>
+      <p>さぁ、あなたのプロダクトでも呼び出してみましょう！</p>
+    </textbox>
 
-    <h3>import G-CORE</h3>
-    <p>以下のソースをHTMLのheadタグに追加してください。</p>
+    <textbox>
+      <h3>import G-CORE</h3>
+      <p>以下のソースをHTMLのheadタグに追加してください。</p>
 
-    <pre>
-      <code class="prettyprint lang-html">
+      <pre><code class="prettyprint lang-html">
       &lt;link href="https://gamma-410.github.io/G-CORE/v3.css" rel="stylesheet"&gt;
-      </code>
-    </pre>
+      </code></pre>
 
-    <p>たったこれだけで G-CORE の準備は完了しました。</p>
-    <p>早速、コーディングを始めましょう！</p>
+      <p>たったこれだけで G-CORE の準備は完了しました。</p>
+      <p>早速、コーディングを始めましょう！</p>
+    </textbox>
 
     <div>
       <p>G-CORE</p>
@@ -51,34 +56,55 @@
       <p>headLine は、そこにどのような情報が含まれているのかをユーザーに示す大切な表記です。</p>
     </div>
 
-    <h3>source</h3>
-    <p>divに以下のように書くことによって実装できます。</p>
-    <pre>
-      <code class="prettyprint lang-html">
+    <textbox>
+      <h3>source</h3>
+      <p>divに以下のように書くことによって実装できます。</p>
+
+      <pre><code class="prettyprint lang-html">
       &lt;div&gt;
         &lt;p&gt;message&lt;/p&gt;
         &lt;h1&gt;headLineTitle&lt;/h1&gt;
         &lt;p&gt;detailText&lt;/p&gt;
       &lt;/div&gt;
-      </code>
-    </pre>
+      </code></pre>
 
-    <h3>terms</h3>
-    <p>message と headLineTitle と detailText ではユーザーに抽象的情報を示すことができます。</p>
+      <h3>terms</h3>
+      <p>message と headLineTitle と detailText ではユーザーに抽象的情報を示すことができます。</p>
+    </textbox>
+
     <ul>
       <li>message</li>
-        <p>message は短く、簡単に書くことが大切です。</p>
+      <p>message は短く、簡単に書くことが大切です。</p>
       <li>headLineTitle</li>
-        <p>headLineTitle は具体的でもあり、短く書くと良いでしょう。</p>
+      <p>headLineTitle は具体的でもあり、短く書くと良いでしょう。</p>
       <li>detailText</li>
-        <p>detailText では上の２つで説明できなかった情報を書きます。<br>１から２行程度が良いでしょう。</p>
+      <p>detailText では上の２つで説明できなかった情報を書きます。<br>１から２行程度が良いでしょう。</p>
     </ul>
 
+    <br>
 
     <div>
       <p>G-CORE</p>
-      <h1>Actions</h1>
-      <p>Action Component は、人々が目的を達成するのに役立ちます。</p>
+      <h1>textBox</h1>
+      <p>textBox は、G-CORE のテキストを調節する機能です。<br>テキスト以外に適応させてはいけません。</p>
+    </div>
+
+    <textbox>
+      <h3>source</h3>
+      <p>textBoxは、以下のように書くことによって機能させることができます。</p>
+      <pre><code class="prettyprint lang-html">
+      &lt;textbox&gt;
+        &lt;!-- any --&gt;
+      &lt;/textbox&gt;
+      </code></pre>
+      <p>any の部分に、テキスト要素を追加していきます。</p>
+      <p>注意 : リスト要素では、うまく機能しません。 textBox を適応しないでください。</p>
+    </textbox>
+
+    <div>
+      <p>G-CORE</p>
+      <h1>actions</h1>
+      <p>actionComponent は、人々が目的を達成するのに役立ちます。</p>
     </div>
 
     <ul>
@@ -113,21 +139,41 @@
       <p>ユーザーに情報を伝えるためのコンポーネントです。<br>どのような状態かを瞬時に理解できるようにしましょう。</p>
     </div>
 
-    <g-card-s>
-      <p>処理が完了しました！</p>
-    </g-card-s>
-    <br>
+    <textbox>
+      <h3>source</h3>
 
-    <g-card-e>
-      <p>処理に失敗しました...</p>
-    </g-card-e>
-    <br>
-    
-    <g-card-m>
-      <p>メンテナンス中です...!</p>
-    </g-card-m>
+      <p>処理が完了しました。</p>
+      <pre><code class="prettyprint lang-html">
+      &lt;g-card-s&gt;
+        &lt;p&gt;処理が完了しました！&lt;/p&gt;
+      &lt;/g-card-s&gt;
+      </code></pre>
 
-    <a href="https://github.com/gamma-410/G-CORE">https://github.com/gamma-410/G-CORE</a>
+      <p>処理に失敗しました。</p>
+      <pre><code class="prettyprint lang-html">
+      &lt;g-card-e&gt;
+        &lt;p&gt;処理に失敗しました...&lt;/p&gt;
+      &lt;/g-card-e&gt;
+      </code></pre>
+
+      <p>その他処理系でのコメント</p>
+      <pre><code class="prettyprint lang-html">
+      &lt;g-card-m&gt;
+        &lt;p&gt;メンテナンス中です...!.&lt;/p&gt;
+      &lt;/g-card-m&gt;
+      </code></pre>
+    </textbox>
+
+    <footer>
+      <h1><a href="index.html"><img src="logo.svg" width="40px"></a></h1>
+      <p>G-CORE は、カスタマイズ作業前のHTMLにimportするだけで適応可能なデザインシステムです。<br>
+        G-CORE は、Material Design 3 に近い考え方をしています。<br>
+        独自のマークアップタグを用意しています。簡単に、そして直感的にご利用いただけます。<br>
+        面倒なスタイリング作業を合理化し、チームが美しい製品を迅速に構築するのに役立ちます。</p>
+      <hr>
+      <a href="https://github.com/gamma-410/G-CORE">G-CORE</a>
+    </footer>
+
   </main>
 
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
