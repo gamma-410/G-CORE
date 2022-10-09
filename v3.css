@@ -412,3 +412,8 @@ menu a:hover {
   color: rgb(68, 68, 68);
   font-size: 10px;
 }
+
+/* brbox in br */
+brbox br {
+  margin: 50px;
+}
