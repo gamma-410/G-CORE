@@ -417,3 +417,57 @@ menu a:hover {
 brbox br {
   margin: 50px;
 }
+
+
+/* slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  background: var(--sh2);
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--sh2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: var(--sh2) 0px 0.5px 0.5px 0.5px;
+}
+input[type="range"]::-moz-range-thumb {
+  background: var(--shColor);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: var(--sh2) 0px 0.5px 0.5px 0.5px;
+  border: none;
+  transition: 0.2s;
+}
+input[type="range"]::-moz-range-thumb:hover {
+  transition: 0.2s;
+  background: var(--bsColor);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: var(--shColor) 0px 0.5px 0.5px 0.5px;
+  border: none;
+}
+input[type="range"]::-moz-range-thumb:active {
+  transition: 0.2s;
+  background: var(--bsColor);
+  width: 24px;
+  height: 24px;
+  border-radius: 20%;
+  box-shadow: var(--shColor) 0px 0.5px 0.5px 0.5px;
+  border: none;
+}
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: var(--sh2) 0px 0.5px 0.5px 0.5px;
+}
