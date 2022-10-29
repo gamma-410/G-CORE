@@ -304,6 +304,11 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 600px) {
+  * p {
+    font-size: 0.85em;
+  }
+}
 
 @media (min-width: 768px) {
   main {
@@ -432,7 +437,7 @@ input[type="range"] {
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: var(--sh2);
+  background: var(--shColor);
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -465,6 +470,28 @@ input[type="range"]::-moz-range-thumb:active {
   box-shadow: var(--shColor) 0px 0.5px 0.5px 0.5px;
   border: none;
 }
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  transition: 0.2s;
+  background: var(--bsColor);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: var(--shColor) 0px 0.5px 0.5px 0.5px;
+  border: none;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  -webkit-appearance: none;
+  transition: 0.2s;
+  background: var(--bsColor);
+  width: 24px;
+  height: 24px;
+  border-radius: 20%;
+  box-shadow: var(--shColor) 0px 0.5px 0.5px 0.5px;
+  border: none;
+}
+
 input[type="range"]::-moz-focus-outer {
   border: 0;
 }
