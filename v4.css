@@ -1,0 +1,117 @@
+/* G-CORE | gamma410 ~ copyright (c) 2022 */
+
+:root {
+  --baseColorYellow: #F9F1D6;
+  --yellowPallet1: #E4D59F;
+  --yellowPallet2: #D9C16D;
+  --yellowPallet3: #D2B44B;
+  --yellowPallet4: #C0A33A;
+  --yellowPallet5: #B09532;
+  --yellowPallet6: #967E28;
+  --yellowPallet7: #816A18;
+  --yellowPallet8: #6F590E;
+
+  --baseColorGreen: #E5F3D3;
+  --greenPallet1: #C6E49F;
+  --greenPallet2: #ABD079;
+  --greenPallet3: #8BBB4C;
+  --greenPallet4: #7DA549;
+  --greenPallet5: #739743;
+  --greenPallet6: #5D7938;
+  --greenPallet7: #4F6C27;
+  --greenPallet8: #425B20;
+
+  --baseColorBlue: #D0D9EE;
+  --bluePallet1: #9FB2E4;
+  --bluePallet2: #859FE3;
+  --bluePallet3: #6C8CE1;
+  --bluePallet4: #5B7DD7;
+  --bluePallet5: #466DD2;
+  --bluePallet6: #3A5FC2;
+  --bluePallet7: #3758AF;
+  --bluePallet8: #2B4DA8;
+
+  --baseColorPurple: #D2CDED;
+  --purplePallet1: #A99FE4;
+  --purplePallet2: #8C7EDF;
+  --purplePallet3: #715EDC;
+  --purplePallet4: #6149ED;
+  --purplePallet5: #472FD7;
+  --purplePallet6: #3E28C3;
+  --purplePallet7: #311CAE;
+  --purplePallet8: #1F145F;
+
+  --baseColorPink: #F1D7E8;
+  --pinkPallet1: #E49FCD;
+  --pinkPallet2: #D779B7;
+  --pinkPallet3: #D35DAC;
+  --pinkPallet4: #C9469E;
+  --pinkPallet5: #BB378F;
+  --pinkPallet6: #A32A7A;
+  --pinkPallet7: #9D0E6D;
+  --pinkPallet8: #6D134F;
+
+  --baseColorWhite: #EAEAEA;
+  --whitePallet1: #D3D3D3;
+  --whitePallet2: #9F9F9F;
+  --whitePallet3: #6A6A6A;
+  
+  --baseColorBlack: #313131;
+  --blackPallet1: #292929;
+  --blackPallet2: #232323;
+  --blackPallet3: #181818;
+}
+
+
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Black.otf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "notoSansJP";
+  src: url('fonts/NotoSansJP-Regular.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "notoSansJP";
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.span {
+  display: inline-block;
+}
+
+/* iOS */
+input[type="button"],
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
