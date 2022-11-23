@@ -114,4 +114,67 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
+html,body {
+  padding: 0;
+  margin: 0;
+}
 
+/* 100byte CSS */
+main {
+  max-width: 80ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+/* BASE UI */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+header h1 {
+  font-size: 1.3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.8em;
+}
+header p {
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-right: 0.8em;
+}
+
+menu {
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  padding: 0 10px;
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+menu .link {
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  margin: 0.8em;
+  padding: 10px;
+  border-radius: 80%;
+  transition: 0.5s;
+}
+
+main .box {
+  width: 100%;
+  padding: 40px;
+  border-radius: 25px;
+}

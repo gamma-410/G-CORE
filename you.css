@@ -1,0 +1,25 @@
+/* G-CORE | gamma410 ~ copyright (c) 2022 */
+
+header {
+    background-color: var(--baseColorYellow);
+}
+header h1, header p {
+    color: var(--yellowPallet8);
+}
+
+body {
+    background-color: var(--baseColorYellow);
+}
+
+menu {
+    background-color: var(--yellowPallet1);
+}
+
+menu .link {
+    background-color: var(--yellowPallet2);
+    color: var(--yellowPallet7);
+}
+
+main .box {
+    background-color: var(--yellowPallet1);
+}
