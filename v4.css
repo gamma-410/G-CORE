@@ -164,17 +164,26 @@ menu {
   justify-content: space-evenly;
 }
 menu .link {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0.8em;
+  width: auto;
   padding: 10px;
-  border-radius: 80%;
-  transition: 0.5s;
+  margin: 10px;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
 main .box {
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 40px;
   border-radius: 25px;
+}
+main h1 {
+  font-size: 30px;
+}
+main p {
+  font-size: 15px;
 }
